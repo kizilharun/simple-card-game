@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 cardArray.sort(()=> 0.5 - Math.random());    
 
 const grid = document.querySelector('.grid');
-const resultDisplay = document.querySelector('#result');
+//const resultDisplay = document.querySelector('#result');
 var cardsChosen = [];
 var cardsChosenId = [];
 var cardWon = [];
@@ -96,9 +96,9 @@ function checkForMatch(){
     }
     cardsChosen = [];
     cardsChosenId = [];
-    resultDisplay.textContent = cardWon.length ;
+    //resultDisplay.textContent = cardWon.length ;
     if(cardWon.length === cardArray.length/2){
-        resultDisplay.textcontent = 'WOW, YOU FIND THEM ALL!!';
+        alert('WOW, YOU FIND THEM ALL!!') ;
         window.location.href = "level2homepage.html";
     }
 }

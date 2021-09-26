@@ -128,10 +128,10 @@ function checkForMatch(){
     }
     cardsChosen = [];
     cardsChosenId = [];
-    resultDisplay.textContent = cardWon.length ;
+    //resultDisplay.textContent = cardWon.length ;
     if(cardWon.length === cardArrayLevel2.length/2){
-        resultDisplay.textcontent = 'WOW, YOU FIND THEM ALL!!';
-        window.location.href = "simplecardgame/index.html";
+      alert('WOW, YOU FIND THEM ALL!!');
+        window.location.href = "index.html";
     }
 }
  
